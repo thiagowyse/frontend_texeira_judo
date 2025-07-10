@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teixeira Judô - Transformando Vidas</title>
+    
+    <!-- Links para folhas de estilo externas -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="./styles/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegação principal -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <!-- Logo e nome do projeto -->
+            <a class="navbar-brand" href="#home">
+                <img src="./assets/teixeira-judo-logo.png" alt="Teixeira Judô" class="logo-img">
+                Teixeira Judô
+            </a>
+            
+            <!-- Botão para menu mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Itens do menu de navegação -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Depoimentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#partners">Parceiros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero (Banner principal) -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Transformando Vidas</h1>
+            <p>Um projeto dedicado a fazer a diferença na vida das pessoas através de ações sociais e educativas.</p>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="row">
+                <!-- Card de Missão -->
+                <div class="col-lg-4 mb-4">
+                    <div class="about-card">
+                        <h3>Missão</h3>
+                        <p>Promover transformação social através de educação e desenvolvimento humano.</p>
+                    </div>
+                </div>
+                
+                <!-- Card de Visão -->
+                <div class="col-lg-4 mb-4">
+                    <div class="about-card">
+                        <h3>Visão</h3>
+                        <p>Ser referência em projetos sociais e educacionais que impactem positivamente a sociedade.</p>
+                    </div>
+                </div>
+                
+                <!-- Card de Valores -->
+                <div class="col-lg-4 mb-4">
+                    <div class="about-card">
+                        <h3>Valores</h3>
+                        <p>Comprometimento, Respeito, Inovação, Transparência e Colaboração.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Agenda -->
+    <section id="agenda" class="section agenda-section">
+        <div class="container">
+            <h2 class="section-title">Agenda</h2>
+            <div class="row">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Galeria -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Galeria</h2>
+            <div class="row">
+                <!-- Imagens da galeria (5 no total) -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="./assets/foto1.jpeg" alt="Atividade de Judô" class="gallery-img">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="./assets/foto2.jpeg" alt="Atividade de Judô" class="gallery-img">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="./assets/foto3.jpeg" alt="Atividade de Judô" class="gallery-img">
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <img src="./assets/foto4.jpeg" alt="Atividade de Judô" class="gallery-img">
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <img src="./assets/foto5.jpeg" alt="Atividade de Judô" class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Blog -->
+    <section id="blog" class="section blog-section">
+        <div class="container">
+            <h2 class="section-title">Blog</h2>
+            <div class="row">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section id="testimonials" class="section testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Depoimentos</h2>
+            <!-- Carrossel de depoimentos -->
+            <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card">
+                            <img src="./assets/foto-perfil1.png" alt="Rodrigo da Silva" class="testimonial-img">
+                            <p class="testimonial-text">"Tenho 16 anos, treino judô desde os 8 anos de idade e, este ano, vai fazer 8 anos que estou treinando judô. O judô mudou tudo 
+                                na minha vida: a disciplina, o respeito, e me ensinou a buscar sempre a vitória e nunca desistir."</p>
+                            <div class="testimonial-author">Cristian da Silva</div>
+                            <div class="testimonial-role">Participante</div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Controles do carrossel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Parceiros -->
+    <section id="partners" class="section partners-section">
+        <div class="container">
+            <h2 class="section-title">Parceiros</h2>
+            <div class="row justify-content-center align-items-center"> <!-- Adicionei align-items-center -->
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="partner-card d-flex justify-content-center align-items-center h-100 p-3">
+                        <img src="./assets/instituto-portonave.png" alt="Instituto Portonave" 
+                            style="max-height:80px; width:auto; object-fit:contain;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="contact-info">
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-envelope fa-2x mb-2"></i>
+                            <div>Quadrangularbairrosaopaulo@hotmail.com</div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-phone fa-2x mb-2"></i>
+                            <div>(47) 99826-9346</div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-map-marker-alt fa-2x mb-2"></i>
+                            <div>R. Francisco de Paula Seara, 675 - São Paulo - Navegantes, SC</div>
+                        </div>
+                        
+                        <!-- Botão do WhatsApp -->
+                        <div class="mt-5">
+                            <a href="https://wa.me/5547998269346" 
+                            target="_blank" 
+                            class="btn btn-success btn-lg whatsapp-btn">
+                                <i class="fab fa-whatsapp me-2"></i> Fale conosco no WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Sobre o projeto -->
+                <div class="col-lg-3 mb-4">
+                    <h5>Sobre o Projeto</h5>
+                    <p>Um projeto dedicado a fazer a diferença na vida das pessoas através de ações sociais e educativas.</p>
+                </div>
+                
+                <!-- Links rápidos -->
+                <div class="col-lg-3 mb-4">
+                    <h5>Links Rápidos</h5>
+                    <a href="#home">Início</a>
+                    <a href="#about">Sobre Nós</a>
+                    <a href="#agenda">Agenda</a>
+                    <a href="#contact">Contato</a>
+                    <a href="login.html" target="_self">Acesso Restrito</a>
+                </div>
+                
+                <!-- Informações de contato -->
+                <div class="col-lg-3 mb-4">
+                    <h5>Contato</h5>
+                    <p>Quadrangularbairrosaopaulo@hotmail.com</p>
+                    <p>(47) 99826-9346</p>
+                    <p>R. Francisco de Paula Seara, 675 - São Paulo - Navegantes, SC</p>
+                </div>
+                
+                <!-- Redes sociais -->
+                <div class="col-lg-3 mb-4">
+                    <h5>Redes Sociais</h5>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/teixeira_judo/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Rodapé inferior -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Projeto Social. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para visualização de posts do blog -->
+    <div class="modal fade" id="blogPostModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogPostModalTitle">Post do Blog</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Metadados do post -->
+                    <div class="blog-post-meta mb-3" id="blogPostMeta">
+                        <small class="text-muted">
+                            <i class="fas fa-calendar"></i> <span id="blogPostDate"></span>
+                            <span class="mx-2">•</span>
+                            <i class="fas fa-user"></i> <span id="blogPostAuthor"></span>
+                        </small>
+                    </div>
+                    
+                    <!-- Imagem do post -->
+                    <div class="blog-post-image mb-4" id="blogPostImageContainer">
+                        <img id="blogPostImage" src="/placeholder.svg" alt="" class="img-fluid rounded">
+                    </div>
+                    
+                    <!-- Conteúdo do post -->
+                    <div class="blog-post-content" id="blogPostContent">
+                        <!-- O conteúdo será carregado aqui via JavaScript -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/scripts/script.js"></script>
+</body>
+</html>
