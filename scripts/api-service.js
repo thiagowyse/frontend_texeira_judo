@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://judo-texeira.onrender.com'; // URL atualizada
+const API_BASE_URL = 'https://evolution.alicefinancas.com.br'; // URL atualizada
 
 class ApiService {
     // Método genérico melhorado
