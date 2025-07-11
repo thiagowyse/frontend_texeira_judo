@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       window.location.href = 'login.html';
       return;
     }
-
-    console.log('Token encontrado:', token);
     
     // Verificar autenticação (comentado temporariamente)
     // await apiService.verifyToken();
@@ -225,7 +223,7 @@ function renderPosts() {
   `).join("");
 }
 
-// Renderizar eventos
+// Renderizar eventos (corrigido)
 function renderEvents() {
   const tbody = document.getElementById("eventsTableBody")
 
@@ -253,7 +251,7 @@ function renderEvents() {
       <td>${event.local}</td>
       <td>
         <div class="action-buttons">
-          <button class="btn btn-delete btn-sm" onclick="deleteItem('event', ${event.idEvento})">
+          <button class="btn btn-delete btn-sm" data-id="${event.idEvento}" data-type="event">
             Excluir
           </button>
         </div>
@@ -387,6 +385,8 @@ async function confirmDelete() {
   if (!currentEditingItem) return;
 
   const { type, id } = currentEditingItem;
+
+  console.log(type);
 
   try {
     saveWithLoading("confirmDeleteBtn", "Excluindo...", async () => {
